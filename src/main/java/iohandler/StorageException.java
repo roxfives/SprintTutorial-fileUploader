@@ -1,5 +1,9 @@
 package iohandler;
 
+/**
+ * Parent exception that should be extended for exceptions that are thrown during
+ * storage operations
+ * */
 public class StorageException extends RuntimeException {
 
     public StorageException(String message) {
