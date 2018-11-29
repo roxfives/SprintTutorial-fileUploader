@@ -37,13 +37,14 @@ public class FileUploadController {
     }
 
     /**
-     * Method responsible for adding the list of already uploaded files to the root
-     * page (the welcome/index page). It is triggered on a GET request to the root
-     * page
+     * Method responsible for building the root/index page. Besides using a template to build the page, it adds
+     * the list of already uploaded files to the root page (the root/index page). It is triggered on a GET
+     * request to the root/index page
      *
      * @param model the map with the page attributes
      *
-     * @return
+     * @return    string containing the name of the template used to build the http
+     *            response (the root/index page)
      * */
     @GetMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
